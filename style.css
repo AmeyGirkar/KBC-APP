@@ -1,101 +1,178 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
-#welcomeScreen{
-    width:100%;
-    height:100vh;
-    display:flex;
+
+#welcomeScreen, #resultScreen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://steamuserimages-a.akamaihd.net/ugc/1053227062935074487/E1A9E790D3B6EBDE32EC4142B1F23C30723A5AE8/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url("./assets/giphy.gif");
     background-size: cover;
-    padding: 0;
-    margin: 0;
-
+    background-position: center;
 }
 
-.container{
+.container {
     width: 400px;
     height: auto;
-    background-color: #22074abc;
+    background-color: #22074dbc;
     backdrop-filter: blur(10px);
-    border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
     color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 30px;
 }
 
-.container label{
+.container label {
     font-weight: 700;
 }
 
-.container input{
-    width: 80%;
+.container input {
+    width: 100%;
     height: 40px;
     outline: none;
-    padding: 0 1 rem;
-    margin: 20px 0px 20px 0px;
+    padding: 0 1rem;
+    margin: 20px 0;
     background-color: #eee;
-    border:none;
+    border: none;
+    border-radius: 7px;
     color: #22074d;
     font-size: 1rem;
-    caret-color: #22074d;
-    border-radius: 7px;
 }
 
-.container button{
-    background: linear-gradient(#100241,black);
-    padding: 12px 0px ;
+.button {
+    background: linear-gradient(#100241, black);
+    padding: 12px 0px;
     width: 150px;
-    background-color: black;
     color: white;
-    outline:none ;
     border: none;
+    outline: none;
     cursor: pointer;
     text-transform: uppercase;
-    transition: 1s ease;
 }
 
-#usernameError{
+.error {
     color: red;
     padding: 5px;
 }
-.hide{
-    display:none !important;
+
+.hide {
+    display: none !important;
 }
 
-#quizArea{
+#quizArea {
     width: 100%;
     height: 100vh;
     display: flex;
 }
 
-.questionArea{
+.questionArea {
     width: 75%;
-    height:100vh ;
-    background-image: url(https://images.news18.com/ibnlive/uploads/2021/08/whatsapp-image-2021-08-24-at-08.55.58-e1629793241775.jpeg);
-    background-repeat: no-repeat;
+    height: 100vh;
+    background-image: url("./assets/bg.jpeg");
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
-#levelArea{
+
+.levelArea {
     width: 25%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: #22074d;
+    background-color: #100241;
     color: white;
 }
 
+#levelList {
+    padding: 20px;
+    list-style: none;
+}
+
+.level {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.levelNumber {
+    font-size: 20px;
+    font-weight: 300;
+    width: 30%;
+}
+
+.levelAmount {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.level.active {
+    background-color: teal;
+}
+
+#questionStatement {
+    width: 80%;
+    background: linear-gradient(#100241, black);
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#answers {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.answer {
+    width: 38%;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(#100241, black);
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 10px 20px 10px;
+    cursor: pointer;
+}
+
+.answer:hover {
+    background: mediumblue;
+}
+
+#resultScreen h1 {
+    padding: 20px;
+}
+
+#resultScreen h3 {
+    padding: 10px;
+}
+
+#timer {
+    font-weight: 500;
+    color: white;
+    padding: 5px;
 }
