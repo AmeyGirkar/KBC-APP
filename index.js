@@ -4,21 +4,21 @@ const resultScreen = document.getElementById("resultScreen");
 const timerText = document.getElementById("timer");
 
 const levels = [
-    '₹ 1,000,000',
-    '₹ 5,00,000',
-    '₹ 2,50,000',
-    '₹ 1,25,000',
-    '₹ 64,000',
-    '₹ 32,000',
-    '₹ 16,000',
-    '₹ 8,000',
-    '₹ 4,000',
-    '₹ 2,000',
-    '₹ 1,000',
-    '₹ 500',
-    '₹ 300',
-    '₹ 200',
-    '₹ 100'
+    '&#x20B9; 1,000,000',
+    '&#x20B9; 5,00,000',
+    '&#x20B9; 2,50,000',
+    '&#x20B9; 1,25,000',
+    '&#x20B9; 64,000',
+    '&#x20B9; 32,000',
+    '&#x20B9; 16,000',
+    '&#x20B9; 8,000',
+    '&#x20B9; 4,000',
+    '&#x20B9; 2,000',
+    '&#x20B9; 1,000',
+    '&#x20B9; 500',
+    '&#x20B9; 300',
+    '&#x20B9; 200',
+    '&#x20B9; 100'
 ]
 
 const questions = [
@@ -106,7 +106,7 @@ const questions = [
 
 let currentLevelIndex = levels.length - 1;
 let currentQuestionIndex = 0;
-let winningAmount = "₹ 0";
+let winningAmount = "&#x20B9; 0";
 let timeInterval = 30;
 let interval;
 
